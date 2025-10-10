@@ -1,10 +1,10 @@
 class Configsync < Formula
   desc "Synchronize macOS application configurations across machines"
   homepage "https://github.com/dotbrains/configsync"
-  url "https://github.com/dotbrains/configsync/releases/download/v1.0.3/configsync-v1.0.3-darwin-universal.tar.gz"
-  sha256 "50e9a88189a784111d15bca1e032784355798ab60d8ae7621f994cb3cb2cf850"
+  url "https://github.com/dotbrains/configsync/releases/download/v1.0.4/configsync-v1.0.4-darwin-universal.tar.gz"
+  sha256 "bdc25f0f3aeb6216a999f3968a44e1d4309e60d67e2675ee2cbb79b1fcecaf13"
   license "MIT"
-  version "1.0.3"
+  version "1.0.4"
 
   depends_on :macos
 
