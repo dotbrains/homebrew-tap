@@ -5,13 +5,13 @@
 class GhIdentity < Formula
   desc "Multi-account GitHub identity management — automatic context-based account switching and per-directory identity binding."
   homepage "https://github.com/dotbrains/gh-identity"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dotbrains/gh-identity/releases/download/v0.1.0/gh-identity_0.1.0_darwin_amd64.tar.gz"
-      sha256 "b7aeeb641d64f1c7a171a4e90dfe1b12f31b649210d2fce28851fbd7dee75e31"
+      url "https://github.com/dotbrains/gh-identity/releases/download/v0.2.0/gh-identity_0.2.0_darwin_amd64.tar.gz"
+      sha256 "393765329d90f2b674ec0a015e696df8153cbb55b5a4387b0324efd0f627510d"
 
       define_method(:install) do
         bin.install "gh-identity"
@@ -19,8 +19,8 @@ class GhIdentity < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dotbrains/gh-identity/releases/download/v0.1.0/gh-identity_0.1.0_darwin_arm64.tar.gz"
-      sha256 "933773563763d4ea374e2bf4fbdcc6e659126363c0e54f06534680b2510923e8"
+      url "https://github.com/dotbrains/gh-identity/releases/download/v0.2.0/gh-identity_0.2.0_darwin_arm64.tar.gz"
+      sha256 "0e0546b8d9705e9f11d571105a0e3439d04a7e2140d064408508128781a8d106"
 
       define_method(:install) do
         bin.install "gh-identity"
@@ -31,16 +31,16 @@ class GhIdentity < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dotbrains/gh-identity/releases/download/v0.1.0/gh-identity_0.1.0_linux_amd64.tar.gz"
-      sha256 "1efe457a16787cc4e60f77a0df97e12773fa8334ac567455a3a79047fb48f245"
+      url "https://github.com/dotbrains/gh-identity/releases/download/v0.2.0/gh-identity_0.2.0_linux_amd64.tar.gz"
+      sha256 "9def30aa4c021915b4bf42988becdbe8b10c37d28bba60551a7fc7bdb0fc93ed"
       define_method(:install) do
         bin.install "gh-identity"
         bin.install "gh-identity-hook"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dotbrains/gh-identity/releases/download/v0.1.0/gh-identity_0.1.0_linux_arm64.tar.gz"
-      sha256 "d79fa4de61698f7cfdfbf47537c2c174da795cafaa9388c469d7af3cdba36c7d"
+      url "https://github.com/dotbrains/gh-identity/releases/download/v0.2.0/gh-identity_0.2.0_linux_arm64.tar.gz"
+      sha256 "d737a9ee9ff53b380111c2b2b3ac74d17c4988eb4855624146f15e95750ead9b"
       define_method(:install) do
         bin.install "gh-identity"
         bin.install "gh-identity-hook"
