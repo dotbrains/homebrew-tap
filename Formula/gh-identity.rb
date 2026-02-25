@@ -11,7 +11,7 @@ class GhIdentity < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/dotbrains/gh-identity/releases/download/v0.4.0/gh-identity_0.4.0_darwin_amd64.tar.gz"
-      sha256 "3d36ee3177d9958469096a95e3f06131bb905d24bc6e941ac4bbd6f69ef512e7"
+      sha256 "70464c4e638827845a75c5329d494484531111d1f4f0cb674911f0b223a3457e"
 
       define_method(:install) do
         bin.install "gh-identity"
@@ -20,7 +20,7 @@ class GhIdentity < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/dotbrains/gh-identity/releases/download/v0.4.0/gh-identity_0.4.0_darwin_arm64.tar.gz"
-      sha256 "f56eab03d089117acde347bec7e8e4d5658068723c57d63798e39c33004378ec"
+      sha256 "4634660bba54a168e511f081e7b523fc5a2ac8bade531c00dffd57d6a3431a52"
 
       define_method(:install) do
         bin.install "gh-identity"
@@ -32,7 +32,7 @@ class GhIdentity < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/dotbrains/gh-identity/releases/download/v0.4.0/gh-identity_0.4.0_linux_amd64.tar.gz"
-      sha256 "72903ce11139643e31656bff8d681b21fdf5c4d7f48a90e626d3539fdaaad543"
+      sha256 "1552ca96e89603e1d266aaac27f2698660127aa5e6449636f09ee8e6e68b9ef8"
       define_method(:install) do
         bin.install "gh-identity"
         bin.install "gh-identity-hook"
@@ -40,7 +40,7 @@ class GhIdentity < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/dotbrains/gh-identity/releases/download/v0.4.0/gh-identity_0.4.0_linux_arm64.tar.gz"
-      sha256 "e68f6481760f49f7b2298dd004fc94e3471d8dd9f3dff816c12a94b6c5f6e1e3"
+      sha256 "ddd56fd21ba1e9c546939410be8d2d5e1c6270ac0453d601be03e9aecc2fb363"
       define_method(:install) do
         bin.install "gh-identity"
         bin.install "gh-identity-hook"
