@@ -3,7 +3,7 @@ cask "awsw" do
   name "awsw"
   desc "Seamlessly switch between AWS SSO accounts and EKS contexts"
   homepage "https://github.com/dotbrains/awsw"
-  version "0.1.0"
+  version "0.1.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "awsw" do
   on_macos do
     on_intel do
       url "https://github.com/dotbrains/awsw/releases/download/v#{version}/awsw_darwin_amd64.tar.gz"
-      sha256 "5ae5687d1545ba13517d4312e8555730cabee863662e88755787dd1b2da4d649"
+      sha256 "6727559ad13049ed2c8fece8ef97eadb3d9b1dbb0e951360f7edafbf0ce9f89e"
     end
     on_arm do
       url "https://github.com/dotbrains/awsw/releases/download/v#{version}/awsw_darwin_arm64.tar.gz"
-      sha256 "499e7071d28ee9a02f65352c38dd880380d1b9caf8487ae94fee955f60a97758"
+      sha256 "d8ebfc1c882f10fb71c14b6723aff626930387b36df215e90683bf49104e0ad0"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/dotbrains/awsw/releases/download/v#{version}/awsw_linux_amd64.tar.gz"
-      sha256 "2e010c9408d8068ed97255372ed2cfb780490af1e49dc2c7138d65f67ff060d7"
+      sha256 "0ab4b76c3be92b3da8d797054b40efe0efe85b2339c956c23b245d7b579df86c"
     end
     on_arm do
       url "https://github.com/dotbrains/awsw/releases/download/v#{version}/awsw_linux_arm64.tar.gz"
-      sha256 "e684e23b297ab26262097e81e687fccc9c1b20f2dcc78bc965efb61edb09679e"
+      sha256 "482a91aeede85b16c8e942854b96c4daa1c605c3d1ef259449e3d179d2ec93b7"
     end
   end
 
