@@ -3,7 +3,7 @@ cask "prr" do
   name "prr"
   desc "AI-powered PR code review CLI"
   homepage "https://github.com/dotbrains/prr"
-  version "0.7.1"
+  version "0.8.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "prr" do
   on_macos do
     on_intel do
       url "https://github.com/dotbrains/prr/releases/download/v#{version}/prr_darwin_amd64.tar.gz"
-      sha256 "d66604c2b6b4f3943cfa5b3c78bb529fc7580d09dcd54fb63a4fce0786f7c0fa"
+      sha256 "7e2d01071f2d62753f2d7ad1bad952c86cf8e7b4e03822bb6a7438e6aeed2db3"
     end
     on_arm do
       url "https://github.com/dotbrains/prr/releases/download/v#{version}/prr_darwin_arm64.tar.gz"
-      sha256 "91f924b942748aa52269f38053cf7196e1ffb8117449b81e84e31b61c74a15d2"
+      sha256 "ee460fc04f6b27b4216382c49fb56b1261b0cb7ef69126c1a66a3ee513af836a"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/dotbrains/prr/releases/download/v#{version}/prr_linux_amd64.tar.gz"
-      sha256 "0ec53765ab5027355f8c0966ca2a19913f33f9839b9fb0823c97fd7c3acde87e"
+      sha256 "21c4d9125035ee220348ef7453e84c72b5a6e6d02a0f8fe5d5c1c526a667a893"
     end
     on_arm do
       url "https://github.com/dotbrains/prr/releases/download/v#{version}/prr_linux_arm64.tar.gz"
-      sha256 "e63dfb6223af1d963d3c5cb81a79b33fa2169ef79705e0bacd9df9ae3b1b4fd9"
+      sha256 "7320495970edaba9e948a271747d678dded1e9b07023e2f75d2a06a6c92979b3"
     end
   end
 
