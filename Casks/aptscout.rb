@@ -3,7 +3,7 @@ cask "aptscout" do
   name "aptscout"
   desc "Apartment availability tracker CLI"
   homepage "https://github.com/dotbrains/aptscout"
-  version "0.1.0"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "aptscout" do
   on_macos do
     on_intel do
       url "https://github.com/dotbrains/aptscout/releases/download/v#{version}/aptscout_darwin_amd64.tar.gz"
-      sha256 "3190d53ecdb85b253442bd3541d12ed8250dcfbd00aa773c0eb2cd356d845700"
+      sha256 "932b91698869fb940846b788c111935211df92e6fc855a763e96683b5b2d6797"
     end
     on_arm do
       url "https://github.com/dotbrains/aptscout/releases/download/v#{version}/aptscout_darwin_arm64.tar.gz"
-      sha256 "36b4e9937d06b649776b0a9a444a1b940eac65ce9386f0717d20c47ce4990326"
+      sha256 "b67368d92611e3572fa5714b8e8d6820c5de9df5bb02e07967d7e562f4d26daa"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/dotbrains/aptscout/releases/download/v#{version}/aptscout_linux_amd64.tar.gz"
-      sha256 "fc8349c94a8dcf55c97aaffc58027dcfab995d02de6fcbe2c0830f8db41ebd81"
+      sha256 "a8d7c382accb2053e0dcc57b91afa56d3e829865136b1d61ba755992b0e86a2a"
     end
     on_arm do
       url "https://github.com/dotbrains/aptscout/releases/download/v#{version}/aptscout_linux_arm64.tar.gz"
-      sha256 "b68587c1eab0e5f083d041f3b26293afb9a657a13a4ce4b479cf9a52f3a2b867"
+      sha256 "4c2035d4d0cbc2ab787cae146bcc70a965681516225782bc8c4274f13ea0477d"
     end
   end
 
